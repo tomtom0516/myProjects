@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AjcSettings">
+    <option name="ajcPath" value="D:/aspectj1.9/lib/aspectjtools.jar" />
+    <option name="aptOptionsEnabled" value="true" />
+  </component>
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mySpringAnnotation" />
+        <module name="mySpringAop" />
+        <module name="mySpringAutowiring" />
+        <module name="mySpringContextEvent" />
+        <module name="mySpringJDBC" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mySpringAnnotation" target="1.8" />
+      <module name="mySpringAop" target="1.7" />
+      <module name="mySpringAutowiring" target="1.8" />
+      <module name="mySpringContextEvent" target="1.8" />
+      <module name="mySpringInjectCollection" target="1.8" />
+      <module name="mySpringJDBC" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

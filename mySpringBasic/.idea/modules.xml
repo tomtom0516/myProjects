@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mySpringAnnotation/mySpringAnnotation.iml" filepath="$PROJECT_DIR$/mySpringAnnotation/mySpringAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mySpringAop/mySpringAop.iml" filepath="$PROJECT_DIR$/mySpringAop/mySpringAop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mySpringAutowiring/mySpringAutowiring.iml" filepath="$PROJECT_DIR$/mySpringAutowiring/mySpringAutowiring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mySpringContextEvent/mySpringContextEvent.iml" filepath="$PROJECT_DIR$/mySpringContextEvent/mySpringContextEvent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mySpringInjectCollection/mySpringInjectCollection.iml" filepath="$PROJECT_DIR$/mySpringInjectCollection/mySpringInjectCollection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mySpringJDBC/mySpringJDBC.iml" filepath="$PROJECT_DIR$/mySpringJDBC/mySpringJDBC.iml" />
+    </modules>
+  </component>
+</project>
