@@ -15,6 +15,7 @@
         <module name="mySpringAutowiring" />
         <module name="mySpringContextEvent" />
         <module name="mySpringJDBC" />
+        <module name="mySpringMVCHelloWorld" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +25,7 @@
       <module name="mySpringContextEvent" target="1.8" />
       <module name="mySpringInjectCollection" target="1.8" />
       <module name="mySpringJDBC" target="1.7" />
+      <module name="mySpringMVCHelloWorld" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

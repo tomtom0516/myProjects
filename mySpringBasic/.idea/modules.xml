@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/mySpringContextEvent/mySpringContextEvent.iml" filepath="$PROJECT_DIR$/mySpringContextEvent/mySpringContextEvent.iml" />
       <module fileurl="file://$PROJECT_DIR$/mySpringInjectCollection/mySpringInjectCollection.iml" filepath="$PROJECT_DIR$/mySpringInjectCollection/mySpringInjectCollection.iml" />
       <module fileurl="file://$PROJECT_DIR$/mySpringJDBC/mySpringJDBC.iml" filepath="$PROJECT_DIR$/mySpringJDBC/mySpringJDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mySpringMVCHelloWorld/mySpringMVCHelloWorld.iml" filepath="$PROJECT_DIR$/mySpringMVCHelloWorld/mySpringMVCHelloWorld.iml" />
     </modules>
   </component>
 </project>

@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/mySpringContextEvent/pom.xml" />
         <option value="$PROJECT_DIR$/mySpringAop/pom.xml" />
         <option value="$PROJECT_DIR$/mySpringJDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/mySpringMVCHelloWorld/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
