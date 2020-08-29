@@ -1,33 +1,28 @@
-# This is a basic workflow to help you get started with Actions
+name: Docker Image CI
 
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - develop
+      - stage
+      - master
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    env:
+      image_repo: ${{ secrets.DOCKER_REPO }}
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    - uses: actions/checkout@v2
+    - name: Login to Docker Registry
+      run: echo ${{ secrets.DOCKER_TOKEN }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
+    - name: Build Docker Image
+      run: |
+        docker build . --file Dockerfile --tag $image_repo:latest
+    - name: Push image to the Registry
+      run: |
+        commit_id=${GITHUB_SHA:0:7}
+        prefix=${GITHUB_REF#"refs/heads/"}
+        tag=$prefix-$commit_id
+        docker tag $image_repo:latest $image_repo:$tag
+        docker push $image_repo:$tag
